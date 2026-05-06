@@ -10,7 +10,7 @@ from .views import (
 
 urlpatterns = [
     #Job URLs
-    path('jobs/', JobListCreateView.as_view(), name='job-list-create'),
+    path('jobsview/', JobListCreateView.as_view(), name='job-list-create'),
     path('jobs/<int:pk>/', JobDetailView.as_view(), name='job-detail'),
 
     #Job Application URLs
